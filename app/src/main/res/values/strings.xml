@@ -10,4 +10,9 @@
     <string name="xyz_reader">XYZ Reader</string>
     <string name="my_own_app">Capstone: My Own App</string>
     <string name="my_own_app_tapped">This button will launch my capstone app!</string>
+    <string name="spotify_tapped">Spotify tapped</string>
+    <string name="scores_tapped">Scores tapped</string>
+    <string name="library_tapped">Library tapped</string>
+    <string name="build_it_bigger_tapped">Build It Bigger tapped</string>
+    <string name="xyz_reader_tapped">XYZ Reader tapped</string>
 </resources>

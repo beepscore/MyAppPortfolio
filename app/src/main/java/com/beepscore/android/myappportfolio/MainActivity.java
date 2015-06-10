@@ -39,6 +39,26 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void spotifyTapped(View view) {
+        showToast(getString(R.string.spotify_tapped));
+    }
+
+    public void scoresTapped(View view) {
+        showToast(getString(R.string.scores_tapped));
+    }
+
+    public void libraryTapped(View view) {
+        showToast(getString(R.string.library_tapped));
+    }
+
+    public void buildItBiggerTapped(View view) {
+        showToast(getString(R.string.build_it_bigger_tapped));
+    }
+
+    public void XYZReaderTapped(View view) {
+        showToast(getString(R.string.xyz_reader_tapped));
+    }
+
     public void myOwnAppTapped(View view) {
         showToast(getString(R.string.my_own_app_tapped));
     }
