@@ -23,8 +23,8 @@
             android:id="@+id/textView"
             android:text="@string/my_nanodegree_apps"
             android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
 
         <Button
             android:id="@+id/spotify_button"
