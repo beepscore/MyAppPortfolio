@@ -11,6 +11,7 @@
     <TextView
         android:text="@string/my_nanodegree_apps"
         android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"/>
 
 </RelativeLayout>
