@@ -1,9 +1,12 @@
 package com.beepscore.android.myappportfolio;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends Activity {
@@ -35,4 +38,16 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void myOwnAppTapped(View view) {
+        showToast(getString(R.string.my_own_app_tapped));
+    }
+
+    public void showToast(String text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
 }
