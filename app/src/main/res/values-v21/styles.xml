@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
-        <item name="android:colorBackground">@color/custom_theme_color</item>
-        <item name="android:colorButtonNormal">@color/orange</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:colorButtonNormal">@color/button_normal</item>
     </style>
 </resources>
