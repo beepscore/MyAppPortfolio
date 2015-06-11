@@ -11,17 +11,12 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/scrollView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:id="@+id/scrollView">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_centerHorizontal="true"
-            android:paddingLeft="@dimen/horizontal_padding"
-            android:paddingRight="@dimen/horizontal_padding"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView"
@@ -29,84 +24,86 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
+                android:paddingBottom="30dp"
                 android:layout_gravity="center_horizontal"/>
 
-            <Button
-                android:id="@+id/spotify_button"
-                android:text="@string/spotify_streamer"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_below="@+id/textView"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="spotifyTapped"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/horizontal_padding"
+                android:paddingRight="@dimen/horizontal_padding"
+                android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/scores_button"
-                android:text="@string/scores_app"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_below="@+id/spotify_button"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="scoresTapped"/>
+                <Button
+                    android:id="@+id/spotify_button"
+                    android:text="@string/spotify_streamer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="spotifyTapped"/>
 
-            <Button
-                android:id="@+id/library_button"
-                android:text="@string/library_app"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/scores_button"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="libraryTapped"/>
+                <Button
+                    android:id="@+id/scores_button"
+                    android:text="@string/scores_app"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="scoresTapped"/>
 
-            <Button
-                android:id="@+id/build_it_bigger_button"
-                android:text="@string/build_it_bigger"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/library_button"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="buildItBiggerTapped"/>
+                <Button
+                    android:id="@+id/library_button"
+                    android:text="@string/library_app"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="libraryTapped"/>
 
-            <Button
-                android:id="@+id/xyz_reader_button"
-                android:text="@string/xyz_reader"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/build_it_bigger_button"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="XYZReaderTapped"/>
+                <Button
+                    android:id="@+id/build_it_bigger_button"
+                    android:text="@string/build_it_bigger"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="buildItBiggerTapped"/>
 
-            <Button
-                android:id="@+id/my_own_app_button"
-                android:text="@string/my_own_app"
-                android:textColor="@color/button_text_light_color"
-                android:background="@color/button_capstone"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/xyz_reader_button"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/button_vertical_margin"
-                android:paddingTop="@dimen/button_vertical_padding"
-                android:paddingBottom="@dimen/button_vertical_padding"
-                android:onClick="myOwnAppTapped"/>
+                <Button
+                    android:id="@+id/xyz_reader_button"
+                    android:text="@string/xyz_reader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="XYZReaderTapped"/>
 
+                <Button
+                    android:id="@+id/my_own_app_button"
+                    android:text="@string/my_own_app"
+                    android:textColor="@color/button_text_light_color"
+                    android:background="@color/button_capstone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/button_vertical_margin"
+                    android:paddingTop="@dimen/button_vertical_padding"
+                    android:paddingBottom="@dimen/button_vertical_padding"
+                    android:onClick="myOwnAppTapped"/>
+
+            </LinearLayout>
         </LinearLayout>
-
     </ScrollView>
 
 </LinearLayout>
