@@ -68,7 +68,6 @@ public class MainActivity extends Activity {
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
-        toast.setGravity(Gravity.TOP| Gravity.CENTER_HORIZONTAL, 0, 200);
         toast.show();
     }
 
